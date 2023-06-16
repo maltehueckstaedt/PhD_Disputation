@@ -864,38 +864,3 @@ Insofern bestätigen unsere Datenanalysen das «*Anna-Karenina-Prinzip der Forsc
 
 ::: {#refs}
 :::
-
-## Backup
-
-## Limitationen
-
-::: incremental
--   Ergebnisse geprägt durch Sicht der PIs und Sprecher\*innen
--   Untersuchungseinheit: DFG-Verbünde
--   deutsches Wissenschaftssystem als Rahmenbedingung
-:::
-
-## Forschungsdesiderate
-
-::: incremental
--   Berücksichtigung der Sicht der teilprojektinternen Mitarbeiter\*innen
-    -   Untersuchung der Wechselwirkungen zwischen teilprojektinterner Kooperation und Kooperation auf der Verbundebene
--   Berücksichtigung von weniger durch subjektive (Fehl-)Einschätzung beeinträchtigten Erfolgsvariablen (bibliometrische Erfolgsmaße)
--   Exploration möglicher Problem-Lösungsansätze
-:::
-
-## Accumulated Local Effects
-
-::: incremental
--   Berechnung von *Partial Dependence* aufgrund der Korreliertheit der Inputvariablen nicht möglich
--   Daher Berechnung von *Accumulated Local Effects*:
-    -   Bei der Berechnung der ALE einer Eingangsvariablen werden intervenierende Effekte dritter Prädiktoren isoliert.
-:::
-
-## Accumulated Local Effects
-::: incremental
--   Interpretation:
-    -   Der Wert des ALE kann als der Haupteffekt des Merkmals bei einem bestimmten Wert im Vergleich zur durchschnittlichen Vorhersage der Daten interpretiert werden.
-    -   `ARB6==3:-0.01:`
-        -   0.01 mal so geringere Chance auf Erfolg wie die Durchschnittswahrscheinlichkeit
-:::
