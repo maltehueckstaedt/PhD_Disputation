@@ -1,0 +1,901 @@
+---
+title: "Forschungs-<br>kooperationen"
+subtitle: "Probleme und Erfolgsdeterminanten"
+author: "Malte Hückstädt <br> Disputationsvortrag<br>08.06.2023"
+bibliography: bibliography.bib
+csl: apa.csl
+title-slide-attributes:
+  data-background-image: images/Deckblatt.png
+format:
+  dzhw-revealjs:
+#    navigation-mode: vertical
+#    controls-layout: bottom-right
+    lang: de
+    slide-number: c/t
+    logo: images/logo.png
+    footer: "Hannover, 08.06.2023 | Forschungskooperationen – Probleme und Erfolgsdeterminanten"
+    self-contained: false
+    incremental: false
+    chalkboard: 
+      buttons: false
+    include-after-body: clean_title_page.html
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+      font-size: .5em
+      }
+    </style>
+include-after: |
+  <script type="text/javascript">
+    Reveal.on('ready', event => {
+      if (event.indexh === 0) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+    });
+  Reveal.addEventListener('slidechanged', (event) => {
+    if (event.indexh === 0) {
+      Reveal.configure({ slideNumber: 'c' });
+      document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+    }
+    if (event.indexh === 1) { 
+      Reveal.configure({ slideNumber: 'c' });
+      document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+    }
+  });
+  </script>
+---
+
+## Übersicht des Disputationsvortrags
+
+::: incremental
+1.  Entwicklung, Definition, Triebkräfte und Herausforderungen von Forschungskooperationen
+
+2.  Desiderate der Kooperationsforschung
+
+3.  Fragestellung(-en) der Dissertation
+
+4.  Zentrale Forschungsergebnisse und Thesen der Dissertation
+
+5.  Zusammenfassung und Fazit
+:::
+
+## Entwicklung von Forschungskooperationen
+
+::: {style="margin-top: 100px;"}
+::: incremental
+-   seit Mitte des 20. Jahrhundert rapide Zunahme kooperationsförmiger Forschung:
+    -   mehr Ko-Autorenschaft [@wuchtyIncreasingDominanceTeams2007]
+    -   größere Teams [@hunterCollaborativeResearchSociology2008]
+:::
+:::
+
+## Entwicklung von Forschungskooperationen
+
+::: {style="margin-top: 100px;"}
+::: incremental
+-   Ursachen des *collaborative turn* [@olechnicka2019]:
+    -   mehr Gelegenheitsstrukturen zur Kooperation [@olechnicka2019]
+    -   Kooperationsimperative [@bozemanResearchCollaborationTeam2014]
+:::
+:::
+
+## Definitionen von Forschungskooperation
+
+::: incremental
+-   uneinheitliche Verwendung des Begriffs der *(Forschungs-)Kooperation* [@bukvovaStudyingResearchCollaboration2010]
+
+-   häufig verwendete Definition:
+
+    -   systematische Bündelung und Koordination verschiedener Ressourcen einzelner Forscher\*innen, die sich auf die Erreichung [gemeinsamer Ziele]{.underline} richtet [@olechnicka2019; @katz1997]
+:::
+
+## Definitionen von Forschungskooperation
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+-   eine stärker auf [Koopetition]{.underline} abstellende Definition legt Laudel vor:
+:::
+
+</section>
+
+<section data-auto-animate>
+
+<div>
+
+-   eine stärker auf [Koopetition]{.underline} abstellende Definition legt Laudel vor:
+
+</div>
+
+<div>
+
+> «Kooperation ist ein Zusammenhang von Handlungen mehrerer Akteure, die in funktioneller Hinsicht auf die Erreichung eines Kooperationszieles hin koordiniert werden, das den **Zielen oder Interessen** der Akteure entspricht. [@laudel1999, 32]»
+
+</div>
+
+</section>
+
+## Triebkräfte von Kooperation
+
+<section data-auto-animate>
+
+<div style="margin-top: 100px;">
+
+-   auf verschiedenen Ebenen des Wissenschaftssystems verortbar:
+
+    </div>
+
+    </section>
+
+<section data-auto-animate>
+
+<div>
+
+-   auf verschiedenen Ebenen des Wissenschaftssystems verortbar:
+
+</div>
+
+<!--//////////////////////////////////////////-->
+
+<!-- Schriftgröße für folgende Columns ändern  -->
+
+<!--//////////////////////////////////////////-->
+
+```{=html}
+<style>
+    #meine-id {
+        font-size: 36px; /* Hier können Sie die gewünschte Schriftgröße angeben */
+    }
+</style>
+```
+::: {#meine-id}
+::: columns
+::: {.column width="33%"}
+::: incremental
+-   **Makroebene:**
+
+    -   Innovationsförderung
+
+    -   Effizienzsteigerung
+
+    -   Abbau disziplinärer Versäulung
+
+    -   Bearbeitung <br> komplexer Probleme
+:::
+:::
+
+::: {.column width="33%"}
+::: incremental
+-   **Mesoebene:**
+
+    -   Drittmittel
+
+    -   Forschungs-infrastrukturen
+
+    -   (inter-)nationale Vernetzung / Sichtbarkeit
+
+    -   Steigerung wissenschaftlicher Exzellenz
+:::
+:::
+
+::: {.column width="33%"}
+::: incremental
+-   **Mikroebene:**
+
+    -   Drittmittel
+
+    -   wissenschaftliche Innovation
+
+    -   Qualität / Quantität des Outputs
+
+    -   (inter-)nationale Sichtbarkeit
+
+    -   Reputation
+
+    -   Karriereverlauf
+:::
+:::
+:::
+:::
+
+</section>
+
+## Herausforderungen von Kooperation {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+<section data-auto-animate>
+
+::: {style="margin-top: 200px;"}
+::: r-hstack
+::: {.fragment data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 400px; height: 40px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Etablierungsphase
+:::
+
+::: {.fragment data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 400px; height: 40px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Durchführungsphase
+:::
+
+::: {.fragment data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 400px; height: 40px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Abschlussphase
+:::
+:::
+:::
+
+</section>
+
+<section data-auto-animate>
+
+<div>
+
+::: r-hstack
+::: {.fragment data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 400px; height: 10px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+:::
+
+::: {.fragment data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 400px; height: 10px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+:::
+
+::: {.fragment data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 400px; height: 10px; margin: 2px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+:::
+:::
+
+</div>
+
+<!--//////////////////////////////////////////-->
+
+<!-- Schriftgröße für folgende Columns ändern  -->
+
+<!--//////////////////////////////////////////-->
+
+```{=html}
+<style>
+    #meine-id2 {
+        font-size: 40px; /* Hier können Sie die gewünschte Schriftgröße angeben */
+    }
+</style>
+```
+::: {#meine-id2}
+::: columns
+::: {.column width="33%"}
+::: incremental
+::: {.fragment .fade-up}
+Etablierungsphase
+:::
+
+-   Ziele und Fragen:
+
+    -   epistemische Leitplanke
+
+    -   organisationaler Fixpunkt
+
+    -   geteilt, klar, realistisch, konkret und flexibel verfasst
+:::
+:::
+
+::: {.column width="33%"}
+::: incremental
+::: {.fragment .fade-up}
+Durchführungsphase
+:::
+
+-   epistemisches Fundament:
+
+    -   Verständigung
+
+    -   Vernetzung
+:::
+:::
+
+::: {.column width="33%"}
+::: incremental
+::: {.fragment .fade-up}
+Abschlussphase
+:::
+
+-   Synthese:
+
+    -   Verschmelzung der Forschungsergebnisse
+    -   übergeordnete Gesamtsicht
+    -   Mehrwerte
+:::
+:::
+:::
+:::
+
+</section>
+
+## Desiderate der Kooperationsforschung
+
+::: {style="margin-top: 100px;"}
+::: incremental
+-   wenig evidenzbasierte Erkenntnisse:
+
+    -   Wie entstehen Kooperationsprobleme?
+    -   Wie wirken sich Kooperationsprobleme aufeinander und den Erfolg aus?
+    -   Warum sind Forschungskooperationen erfolgreich?
+:::
+:::
+
+## Desiderate der Kooperationsforschung
+
+::: {style="margin-top: 100px;"}
+::: {.fragment .fade-up}
+Kooperationsförmige Forschung...
+
+> «\[...\]*lässt sich demnach gleichzeitig als **over-theorized and under-researched** bezeichnen.* [@hollaender2003,7]»
+:::
+:::
+
+## (Teil-)Fragen der Dissertation
+
+<section data-auto-animate>
+
+::: {style="margin-top: 250px;"}
+::: fragment
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 200px;font-size: smaller"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;font-size: smaller"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 3:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben Kooperationsprobleme auf den Erfolg von Forschungsverbünden aus?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 50px;font-size: smaller"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 3:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben Kooperationsprobleme auf den Erfolg von Forschungsverbünden aus?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 4:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen sind Forschungskooperationen erfolgreich?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 0px;font-size: smaller"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 3:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben Kooperationsprobleme auf den Erfolg von Forschungsverbünden aus?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 4:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen sind Forschungskooperationen erfolgreich?
+:::
+
+::: {style="margin-top: 25px;font-size: smaller"}
+[Teilfrage 5:]{style="color:#f69f23;font-weight:bold"} Bestehen systematische, individuelle und verbundweite Differenzen in der Intensität des Auftretens von Kooperationsproblemen?
+:::
+
+</section>
+
+## Kooperationsprobleme {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: {.fragment .fade-up}
+Hintergrund: Sieben zentrale Kooperationsprobleme:
+:::
+
+::: r-hstack
+::: {.fragment .fade-up data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Fairness-<br>probleme<br>[¬🤝]{style="font-size: 1.5em;"}
+:::
+
+::: {.fragment .fade-up data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Commitment-<br>probleme<br>[¬💪]{style="font-size: 1.5em;"}
+:::
+
+::: {.fragment .fade-up data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Differenz-<br>probleme<br>[¬💬]{style="font-size: 1.5em;"}
+:::
+
+::: {.fragment .fade-up data-id="box4" auto-animate-delay="0.3" style="background: #F781F3; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Beziehungs-<br>probleme<br>[¬💚]{style="font-size: 1.5em;"}
+:::
+:::
+
+::: r-hstack
+::: {.fragment .fade-up data-id="box5" auto-animate-delay="0.4" style="background: #f69f23; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Sicherheits-<br>probleme<br>[¬📅]{style="font-size: 1.5em;"}
+:::
+
+::: {.fragment .fade-up data-id="box6" auto-animate-delay="0.5" style="background: #0d7d94; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Management-<br>probleme<br>[¬💼]{style="font-size: 1.5em;"}
+:::
+
+::: {.fragment .fade-up data-id="box7" auto-animate-delay="0.5" style="background: #AC58FA; width: 200px; height: 150px; margin: 10px; text-align: center; color: #ffffff;   font-size: 68%; display: flex; justify-content: center; align-items: center;"}
+Kommunik.-<br>probleme<br>[¬📞]{style="font-size: 1.5em;"}
+:::
+:::
+
+## Kooperationsprobleme {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="50%"}
+::: incremental
+::: {style="margin-top: 100px;"}
+::: {.fragment .fade-up}
+Diese Kooperationsprobleme:
+:::
+
+-   sind nur theoretisch zu differenzieren
+
+-   überlappen einander
+
+-   sind korreliert<br> [@meißner2022].
+:::
+:::
+:::
+
+::: {.column width="50%"}
+::: r-stack
+::: {data-id="box1" style="background: #2780e3; width: 400px; height: 400px; border-radius: 200px; font-size: 65%; justify-content: right; align-items: right; text-align: left;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 350px; height: 350px; border-radius: 200px;font-size: 65%;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 300px; height: 300px; border-radius: 200px;font-size: 65%;"}
+:::
+
+::: {data-id="box4" style="background: #F781F3; width: 250px; height: 250px; border-radius: 200px; font-size: 65%;"}
+:::
+
+::: {data-id="box5" style="background: #f69f23; width: 200px; height: 200px; border-radius: 200px; font-size: 65%;"}
+:::
+
+::: {data-id="box6" style="background: #0d7d94; width: 150px; height: 150px; border-radius: 200px; font-size: 65%;"}
+:::
+
+::: {data-id="box7" style="background: #AC58FA; width: 100px; height: 100px; border-radius: 200px; font-size: 65%;"}
+:::
+:::
+
+::: {style="text-align: center; height: 200px;"}
+<p style="display: inline-block; vertical-align: middle;">
+
+¬🤝⇔¬💪⇔¬💬⇔¬💚⇔<br>¬📅⇔¬💼⇔¬📞
+
+</p>
+:::
+:::
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+<section data-auto-animate>
+
+::: {style="margin-top: 150px;"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+[Teilfrage 1:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen entstehen Kooperationsprobleme?
+:::
+
+::: {style="margin-top: 25px;"}
+[These 1:]{style="color:#006ab2;font-weight:bold"} Kooperationsprobleme werden durch jeweils fünf Promotoren und Inhibitoren gefördert bzw. reduziert [@hückstädt2023].
+:::
+
+</section>
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/sgm_determinaten_probleme){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/promo_1){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/promo_2){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/promo_3){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/promo_4){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/promo_5){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inhibi_1){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inhibi_2){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inhibi_3){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inhibi_4){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inhibi_5){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+<section data-auto-animate>
+
+::: {style="margin-top: 150px;"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+<div>
+
+[Teilfrage 3:]{style="color:#f69f23;font-weight:bold"}Welchen Einfluss üben Kooperationsprobleme auf den Erfolg von Forschungsverbünden aus?
+
+</div>
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 50px;"}
+[Teilfrage 2:]{style="color:#f69f23;font-weight:bold"} Welchen Einfluss üben auftretende Kooperationsprobleme wechselseitig aufeinander aus?
+:::
+
+<div>
+
+[Teilfrage 3:]{style="color:#f69f23;font-weight:bold"}Welchen Einfluss üben Kooperationsprobleme auf den Erfolg von Forschungsverbünden aus?
+
+</div>
+
+::: {style="margin-top: 25px;"}
+[These 2:]{style="color:#006ab2;font-weight:bold"} Für die Interrelationen und Effekte von Kooperationsproblemen ist die soziale Kohäsion eines Forschungsverbundes entscheidend [@huckstadt2022coopetition].
+:::
+
+</section>
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/sgm_interrelation_effecte.png){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inter_1.png){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inter_2.png){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+![](images/inter_3.png){fig-align="center" width="80%" height="80%"}
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+<section data-auto-animate>
+
+::: {style="margin-top: 150px;"}
+[Teilfrage 4:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen sind Forschungskooperationen erfolgreich?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+[Teilfrage 4:]{style="color:#f69f23;font-weight:bold"} Unter welchen Bedingungen sind Forschungskooperationen erfolgreich?
+:::
+
+::: {style="margin-top: 0px;"}
+[These 3:]{style="color:#006ab2;font-weight:bold"} Realistische, klare und geteilte Ziele sind das Fundament eines erfolgreichen Forschungsverbundes [@hückstädt2023a].
+:::
+
+</section>
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 90px;"}
+![](images/rf.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 90px;"}
+![](images/rf_1.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 90px;"}
+![](images/rf_2.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 90px;"}
+![](images/rf_3.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 30px;"}
+![](images/rf_fit.png){fig-align="center" width="65%" height="65%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 30px;"}
+![](images/rf_fit_1.png){fig-align="center" width="65%" height="65%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 30px;"}
+![](images/rf_fit_1.1.png){fig-align="center" width="65%" height="65%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 30px;"}
+![](images/rf_fit_2.png){fig-align="center" width="65%" height="65%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top: 30px;"}
+![](images/rf_fit_3.png){fig-align="center" width="65%" height="65%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+<section data-auto-animate>
+
+::: {style="margin-top: 150px;"}
+[Teilfrage 5:]{style="color:#f69f23;font-weight:bold"} Bestehen systematische, individuelle und verbundweite Differenzen in der Intensität des Auftretens von Kooperationsproblemen?
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+[Teilfrage 5:]{style="color:#f69f23;font-weight:bold"} Bestehen systematische, individuelle und verbundweite Differenzen in der Intensität des Auftretens von Kooperationsproblemen?
+:::
+
+::: {style="margin-top: 29px;"}
+[These 4:]{style="color:#006ab2;font-weight:bold"}Kooperationsprobleme treten selten in erheblichem Ausmaß auf [@weinmann2023].
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 50px;"}
+[Teilfrage 5:]{style="color:#f69f23;font-weight:bold"} Bestehen systematische, individuelle und verbundweite Differenzen in der Intensität des Auftretens von Kooperationsproblemen?
+:::
+
+::: {style="margin-top: 29px;"}
+[These 4:]{style="color:#006ab2;font-weight:bold"}Kooperationsprobleme treten selten in erheblichem Ausmaß auf [@weinmann2023].
+:::
+
+::: {style="margin-top: 29px;"}
+[These 5:]{style="color:#006ab2;font-weight:bold"}Kooperationsprobleme treten unabhängig von der Verfasstheit der Forschungsverbünde oder spezifischen Merkmalen ihrer Mitglieder auf [@weinmann2023].
+:::
+
+</section>
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_1.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_2.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_3.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![Quelle: Eigene Auswertung, [@bozemanStrengthNumbersNew2017]](images/bozeman_1.png){fig-alt="Alternative" fig-align="center" width="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![Quelle: Eigene Auswertung, [@bozemanStrengthNumbersNew2017]](images/bozeman_2.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![Quelle: Eigene Auswertung, [@bozemanStrengthNumbersNew2017]](images/bozeman_3.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![Quelle: Eigene Auswertung, [@bozemanStrengthNumbersNew2017]](images/bozeman_4.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_4.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_5.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Ergebnisse {chalkboard-buttons="true"}
+
+::: {style="margin-top:100px;"}
+![](images/duessel_6.png){fig-align="center" width="55%" height="55%"}
+:::
+
+## Fazit
+
+::: {.fragment .fade-up}
+Wir haben gesehen:
+:::
+
+::: incremental
+-   Kooperationsprobleme haben vielfältige, direkte und indirekte Ursachen [@hückstädt2023].
+-   Kooperationsprobleme steigern sich wechselseitig [@huckstadt2022coopetition].
+-   Kooperationsprobleme beeinträchtigen den Erfolg von Forschungsteams [@hückstädt2023a].
+:::
+
+## Fazit
+
+::: incremental
+-   Die meisten Forschungsteams sind «*happy ones*»<br> [@bozemanStrengthNumbersNew2017; @weinmann2023].
+
+    -   Dabei gilt:
+
+        -   Es müssen verschiedene Faktoren gegeben sein, damit eine Kooperation erfolgreich ist [@hückstädt2023a].
+
+        -   Das Fehlen eines einzelnen Faktors kann andersherum zum Scheitern führen [@hückstädt2023a].
+:::
+
+## Fazit
+
+<section data-auto-animate>
+
+::: {style="margin-top: 200px;"}
+Insofern bestätigen unsere Datenanalysen das «*Anna-Karenina-Prinzip der Forschungskooperation* [@bozemanStrengthNumbersNew2017]»:
+:::
+
+</section>
+
+<section data-auto-animate>
+
+::: {style="margin-top: 100px;"}
+Insofern bestätigen unsere Datenanalysen das «*Anna-Karenina-Prinzip der Forschungskooperation* [@bozemanStrengthNumbersNew2017]»:
+:::
+
+<div>
+
+> «Alle glücklichen Forschungsteams gleichen einander, jedes unglückliche Forschungsteam ist auf seine eigene Weise unglücklich.»
+
+</div>
+
+</section>
+
+## 
+
+::: {style="margin-top:130px;"}
+::: center-container
+<iframe src="https://giphy.com/embed/wIVA0zh5pt0G5YtcAL" width="480" height="316" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+<p>
+
+</p>
+:::
+:::
+
+## References
+
+::: {#refs}
+:::
+
+## Backup
+
+## Limitationen
+
+::: incremental
+-   Ergebnisse geprägt durch Sicht der PIs und Sprecher\*innen
+-   Untersuchungseinheit: DFG-Verbünde
+-   deutsches Wissenschaftssystem als Rahmenbedingung
+:::
+
+## Forschungsdesiderate
+
+::: incremental
+-   Berücksichtigung der Sicht der teilprojektinternen Mitarbeiter\*innen
+    -   Untersuchung der Wechselwirkungen zwischen teilprojektinterner Kooperation und Kooperation auf der Verbundebene
+-   Berücksichtigung von weniger durch subjektive (Fehl-)Einschätzung beeinträchtigten Erfolgsvariablen (bibliometrische Erfolgsmaße)
+-   Exploration möglicher Problem-Lösungsansätze
+:::
+
+## Accumulated Local Effects
+
+::: incremental
+-   Berechnung von *Partial Dependence* aufgrund der Korreliertheit der Inputvariablen nicht möglich
+-   Daher Berechnung von *Accumulated Local Effects*:
+    -   Bei der Berechnung der ALE einer Eingangsvariablen werden intervenierende Effekte dritter Prädiktoren isoliert.
+:::
+
+## Accumulated Local Effects
+::: incremental
+-   Interpretation:
+    -   Der Wert des ALE kann als der Haupteffekt des Merkmals bei einem bestimmten Wert im Vergleich zur durchschnittlichen Vorhersage der Daten interpretiert werden.
+    -   `ARB6==3:-0.01:`
+        -   0.01 mal so geringere Chance auf Erfolg wie die Durchschnittswahrscheinlichkeit
+:::
